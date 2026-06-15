@@ -1,0 +1,13 @@
+id: CC6.1-001
+title: Logical Access Controls – User Authentication
+owner: security@example.com
+evidence:
+  - description: MFA enforcement policy document
+    source: Confluence / Policy Library
+  - description: Screenshot or export of MFA enabled for all users in IdP (e.g., Okta, Azure AD)
+    source: Identity Provider Admin Console
+  - description: User access review report confirming no accounts with MFA disabled
+    source: IAM Audit Log
+  - description: Quarterly exception report (if any MFA exemptions exist)
+    source: Security Team Records
+cadence: quarterly
