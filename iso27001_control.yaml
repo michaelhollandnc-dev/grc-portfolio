@@ -1,0 +1,15 @@
+id: ISO-A.8.2
+title: Information Classification
+owner: Security
+evidence:
+  - description: Information classification policy document defining classification levels (e.g., Public, Internal, Confidential, Restricted)
+    source: Policy Library / Confluence
+  - description: Data inventory or asset register with classification labels applied to information assets
+    source: Asset Management System
+  - description: Evidence of classification labels on sample documents, files, or data stores
+    source: DLP Tool / SharePoint / Google Drive Audit
+  - description: Training completion records showing staff have been trained on classification procedures
+    source: LMS (e.g., Workramp, Lessonly)
+  - description: Periodic review log confirming classification labels remain accurate and up to date
+    source: Security Team Records
+cadence: annually
