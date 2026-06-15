@@ -1,0 +1,19 @@
+id: PCI-8.2
+title: User Authentication Management
+owner: IAM-team
+evidence:
+  - description: User authentication policy documenting password complexity, expiry, and account lockout requirements
+    source: Policy Library / Confluence
+  - description: Configuration export showing enforced password requirements (minimum length, complexity, history) in IdP
+    source: Identity Provider Admin Console (e.g., Okta, Azure AD, Active Directory)
+  - description: Account lockout configuration evidence showing lockout threshold after failed attempts (max 10 per PCI-DSS v4.0 Req 8.3.4)
+    source: IdP / Active Directory Group Policy Export
+  - description: MFA enrollment report confirming all users accessing the cardholder data environment (CDE) have MFA enabled
+    source: IdP Admin Console / MFA Audit Report
+  - description: User access review report listing active accounts, roles, and last-login timestamps
+    source: IAM System / SIEM (e.g., Splunk, Datadog)
+  - description: Terminated user deprovisioning log confirming accounts are disabled within 24 hours of termination
+    source: HR System + IdP Audit Log (e.g., Workday → Okta)
+  - description: Shared and generic account inventory confirming no shared credentials exist in the CDE
+    source: IAM Audit / Privileged Access Management (PAM) Tool
+cadence: quarterly
